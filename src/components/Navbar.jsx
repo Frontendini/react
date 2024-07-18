@@ -1,14 +1,14 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
 	return (
 		<nav className="fixed bottom-0 right-0 flex items-center gap-6 z-10">
 			<ul className="flex gap-4 bg-neutral-800 px-5 rounded-lg">
 				<li className="py-2 px-2 hover:bg-neutral-600">
-					<NavLink to="/">Home</NavLink>
+					<Link to="/" preventScrollReset={true}>Home</Link>
 				</li>
 				<li className="py-2 px-2 hover:bg-neutral-600">
-					<NavLink to="about-us">About us</NavLink>
+					<Link to="about-us" preventScrollReset={true}>About us</Link>
 				</li>
 			</ul>
 			<button className="bg-neutral-800 p-5 rounded-tl-[40%] text-white">
